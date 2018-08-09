@@ -61,9 +61,6 @@ public class Dictionary {
         return true;
     }
 
-
-
-
     public static void main(String[] args){
         try {
             Dictionary dictionary = new Dictionary(4);
