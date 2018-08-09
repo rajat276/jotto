@@ -2,10 +2,8 @@ import java.io.*;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import static java.lang.Integer.max;
-
 public class Dictionary {
-    private static String DICTIONARY_FILE_PATH="sowpods.txt";
+    private static String DICTIONARY_FILE_PATH="src/sowpods.txt";
     private static String SECRET_FILE_PATH="secret.txt";
     private int lengthOfWord;
 
@@ -44,8 +42,8 @@ public class Dictionary {
         outputWriter = new BufferedWriter(new FileWriter(SECRET_FILE_PATH));
 
         for (String str : arrayList) {
-                outputWriter.write(str);
-                outputWriter.newLine();
+            outputWriter.write(str);
+            outputWriter.newLine();
 
         }
         outputWriter.flush();
